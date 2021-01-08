@@ -8,7 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class Main extends Application implements EventHandler<ActionEvent> {
+public class Main extends Application {
 
     Button button;
 
@@ -28,7 +28,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-
+                System.out.println("BUTTON CLICKED!");
             }
         });
 
